@@ -1,6 +1,7 @@
 # Art DX Identicon Generator
 
-東京藝術大学アートDXプロジェクトのためのアイデンディコン生成ツール
+東京藝術大学アートDXプロジェクトのためのアイデンディコン生成ツール  
+[https://h4us.github.io/artdx-identicon-generator/](https://h4us.github.io/artdx-identicon-generator/)
 
 ### 使い方
 - リロードするとランダムに図形が生成されます
