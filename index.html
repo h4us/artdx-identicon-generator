@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art DX Identicon Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+  <script src="https://unpkg.com/p5.js-svg@1.5.1"></script>
+  <script src="src/sketch.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', 'Noto Sans JP', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #fff;
+      color: #000;
+    }
+    .affiliation {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1;
+    }
+    .information {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      z-index: 1;
+      list-style: none;
+      font-size: 0.75rem;
+    }
+    .information dt {
+      margin-bottom: .5rem;
+      font-weight: 500;
+    }
+    @media screen and (min-width: 48rem) {
+      .affiliation {
+        top: 1.5rem;
+        right: 1.5rem;
+      }
+      .information {
+        bottom: 1.5rem;
+        left: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a
+    class="affiliation"
+    href="https://artdx.geidai.ac.jp/"
+    target="_blank"
+    rel="noopener noreferrer">
+    <img src="./src/logo-artdx.svg" alt="Tokyo Geidai Art DX">
+  </a>
+  <dl class="information">
+    <dt>使い方</dt>
+    <dd>リロードするとランダムに図形が生成されます</dd>
+    <dd>三角形をクリックすると青 -> 黒 -> 透明の順に背景が切り替わります</dd>
+    <dd>キーボードの [s] を押下すると svg 形式で保存することができます </dd>
+  </dl>
+</body>
+</html>
